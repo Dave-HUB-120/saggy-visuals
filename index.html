@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="A graphic design portfolio featuring branding, business flyers, food promotion and social media graphics.">
+<title>Saggy's Visuals | Graphic Design Portfolio</title>
+<style>
+:root{--bg:#111015;--panel:#1d1922;--panel2:#211827;--accent:#f5b544;--accent2:#c084fc;--text:#f8f2e8;--muted:#c2b8c9;--border:#3b303f}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,Arial,sans-serif;line-height:1.6}
+header{position:relative;overflow:hidden;padding:68px 7vw 78px;background:radial-gradient(circle at 85% 10%,#4a2d4f 0,transparent 36%),linear-gradient(135deg,#17131b,#211827 65%,#39223d);border-bottom:1px solid var(--border)}
+header:after{content:"";position:absolute;width:370px;height:370px;border:54px solid rgba(245,181,68,.12);border-radius:50%;right:-120px;bottom:-220px}
+.kicker{color:var(--accent);font-size:.82rem;font-weight:800;letter-spacing:.2em;text-transform:uppercase}
+h1{font-size:clamp(2.8rem,8vw,5.7rem);line-height:.98;letter-spacing:-.04em;margin:.5rem 0 1rem;max-width:850px}
+h1 span{color:var(--accent)}
+header p{max-width:650px;color:#e0d6e3;font-size:1.08rem}
+.button{display:inline-block;margin-top:16px;padding:12px 20px;background:var(--accent);color:#20170a;border-radius:999px;text-decoration:none;font-weight:800}
+main{width:min(1200px,90%);margin:auto;padding:52px 0 64px}
+.section-head{display:flex;align-items:end;justify-content:space-between;gap:18px;flex-wrap:wrap;margin-bottom:24px}
+h2{margin:.2rem 0;font-size:clamp(1.8rem,4vw,2.6rem);letter-spacing:-.025em}
+.section-head p{margin:0;color:var(--muted)}
+.filters{display:flex;gap:10px;flex-wrap:wrap;margin:0 0 24px}
+.filters button{border:1px solid var(--border);background:var(--panel);color:var(--text);padding:9px 14px;border-radius:999px;cursor:pointer;font-weight:700}
+.filters button.active,.filters button:hover{background:var(--accent);color:#20170a;border-color:var(--accent)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(245px,1fr));gap:22px}
+.card{background:var(--panel);border:1px solid var(--border);border-radius:18px;overflow:hidden;transition:transform .2s,border-color .2s;box-shadow:0 12px 28px rgba(0,0,0,.18)}
+.card:hover{transform:translateY(-4px);border-color:var(--accent2)}
+.preview{height:300px;position:relative;display:flex;align-items:center;justify-content:center;background:#27212d;padding:10px;overflow:hidden}
+.preview img{width:100%;height:100%;object-fit:contain;display:block}
+.view{position:absolute;right:12px;bottom:12px;background:rgba(17,16,21,.9);color:var(--accent);padding:7px 10px;border-radius:999px;font-size:.78rem;font-weight:800;opacity:0;transition:opacity .2s}
+.card:hover .view{opacity:1}
+.card-copy{padding:17px 18px 20px}
+.category{display:inline-block;color:var(--accent);font-size:.72rem;text-transform:uppercase;letter-spacing:.09em;font-weight:800}
+h3{margin:6px 0;font-size:1.08rem}
+.card p{margin:0;color:var(--muted);font-size:.92rem}
+.about{display:grid;grid-template-columns:1fr 1.2fr;gap:22px;margin-top:52px}
+.panel{background:var(--panel);border:1px solid var(--border);border-radius:18px;padding:26px}
+.panel.highlight{background:linear-gradient(145deg,#34213a,#211827);border-color:#59405e}
+.panel p{color:var(--muted)}
+.tags{display:flex;gap:9px;flex-wrap:wrap;margin-top:15px}
+.tags span{padding:7px 11px;border-radius:999px;background:#302538;color:#f4d9a0;border:1px solid #4b3852;font-size:.84rem;font-weight:700}
+footer{padding:30px 6vw;text-align:center;background:#0a090d;border-top:1px solid var(--border);color:var(--muted)}
+footer strong{color:var(--accent)}
+@media(max-width:680px){header{padding:50px 6vw 60px}.about{grid-template-columns:1fr}.preview{height:260px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="kicker">SAGGY'S VISUALS · Independent Graphic Designer</div>
+  <h1>Creative ideas.<br><span>Distinctive design.</span></h1>
+  <p>A growing collection of brand identities, business flyers, food promotions and social media graphics. Each project is built to communicate clearly and make an impression.</p>
+  <a class="button" href="#projects">Explore my work ↓</a>
+</header>
+<main>
+  <section id="projects">
+    <div class="section-head">
+      <div><div class="kicker">Selected projects</div><h2>My Design Portfolio</h2></div>
+      <p>9 featured pieces from my design work</p>
+    </div>
+    <div class="filters" aria-label="Filter projects">
+      <button class="active" data-filter="all">All projects</button>
+      <button data-filter="Logos & Branding">Logos & Branding</button>
+      <button data-filter="Business Flyers">Business Flyers</button>
+      <button data-filter="Food & Restaurant">Food & Restaurant</button>
+      <button data-filter="Promotional Graphics">Promotional Graphics</button>
+      <button data-filter="Branding & Fashion">Branding & Fashion</button>
+    </div>
+    <div class="grid">
+      <article class="card" data-category="Promotional Graphics">
+        <a class="preview" href="assets/spotify_poster.png" target="_blank" rel="noopener">
+          <img src="assets/spotify_poster.png" alt="Spotify Campaign Poster">
+          <span class="view">View artwork ↗</span>
+        </a>
+        <div class="card-copy">
+          <span class="category">Promotional Graphics</span>
+          <h3>Spotify Campaign Poster</h3>
+          <p>Social media promotional design</p>
+        </div>
+      </article>
+
+      <article class="card" data-category="Business Flyers">
+        <a class="preview" href="assets/too_clean_flyer.png" target="_blank" rel="noopener">
+          <img src="assets/too_clean_flyer.png" alt="Too Clean Laundry Services">
+          <span class="view">View artwork ↗</span>
+        </a>
+        <div class="card-copy">
+          <span class="category">Business Flyers</span>
+          <h3>Too Clean Laundry Services</h3>
+          <p>Business flyer for dry cleaning and laundry</p>
+        </div>
+      </article>
+
+      <article class="card" data-category="Food &amp; Restaurant">
+        <a class="preview" href="assets/freshbite_poster.png" target="_blank" rel="noopener">
+          <img src="assets/freshbite_poster.png" alt="FreshBite Food Poster">
+          <span class="view">View artwork ↗</span>
+        </a>
+        <div class="card-copy">
+          <span class="category">Food &amp; Restaurant</span>
+          <h3>FreshBite Food Poster</h3>
+          <p>Food promotion with a fresh, appetising presentation</p>
+        </div>
+      </article>
+
+      <article class="card" data-category="Logos &amp; Branding">
+        <a class="preview" href="assets/freshbite_logo.png" target="_blank" rel="noopener">
+          <img src="assets/freshbite_logo.png" alt="FreshBite Logo">
+          <span class="view">View artwork ↗</span>
+        </a>
+        <div class="card-copy">
+          <span class="category">Logos &amp; Branding</span>
+          <h3>FreshBite Logo</h3>
+          <p>Food and drinks brand identity</p>
+        </div>
+      </article>
+
+      <article class="card" data-category="Food &amp; Restaurant">
+        <a class="preview" href="assets/fresh_mood_flyer.png" target="_blank" rel="noopener">
+          <img src="assets/fresh_mood_flyer.png" alt="Fresh Food, Fresh Mood">
+          <span class="view">View artwork ↗</span>
+        </a>
+        <div class="card-copy">
+          <span class="category">Food &amp; Restaurant</span>
+          <h3>Fresh Food, Fresh Mood</h3>
+          <p>Food flyer concept and layout</p>
+        </div>
+      </article>
+
+      <article class="card" data-category="Branding &amp; Fashion">
+        <a class="preview" href="assets/cardy_showcase.png" target="_blank" rel="noopener">
+          <img src="assets/cardy_showcase.png" alt="Cardy Fashion Store Showcase">
+          <span class="view">View artwork ↗</span>
+        </a>
+        <div class="card-copy">
+          <span class="category">Branding &amp; Fashion</span>
+          <h3>Cardy Fashion Store Showcase</h3>
+          <p>Fashion and accessories brand presentation</p>
+        </div>
+      </article>
+
+      <article class="card" data-category="Logos &amp; Branding">
+        <a class="preview" href="assets/cardy_logo.png" target="_blank" rel="noopener">
+          <img src="assets/cardy_logo.png" alt="Cardy Fashion Store Logo">
+          <span class="view">View artwork ↗</span>
+        </a>
+        <div class="card-copy">
+          <span class="category">Logos &amp; Branding</span>
+          <h3>Cardy Fashion Store Logo</h3>
+          <p>Fashion boutique logo design</p>
+        </div>
+      </article>
+
+      <article class="card" data-category="Logos &amp; Branding">
+        <a class="preview" href="assets/cardy_emblem.png" target="_blank" rel="noopener">
+          <img src="assets/cardy_emblem.png" alt="Cardy Jewelry &amp; Bumshorts Emblem">
+          <span class="view">View artwork ↗</span>
+        </a>
+        <div class="card-copy">
+          <span class="category">Logos &amp; Branding</span>
+          <h3>Cardy Jewelry &amp; Bumshorts Emblem</h3>
+          <p>Brand emblem for fashion and accessories</p>
+        </div>
+      </article>
+
+      <article class="card" data-category="Business Flyers">
+        <a class="preview" href="assets/laundry_services_panel.png" target="_blank" rel="noopener">
+          <img src="assets/laundry_services_panel.png" alt="Laundry Services Panel">
+          <span class="view">View artwork ↗</span>
+        </a>
+        <div class="card-copy">
+          <span class="category">Business Flyers</span>
+          <h3>Laundry Services Panel</h3>
+          <p>Service-list graphic created for a laundry flyer</p>
+        </div>
+      </article></div>
+  </section>
+  <section class="about">
+    <div class="panel highlight">
+      <div class="kicker">About my work</div>
+      <h2>Design with personality.</h2>
+      <p>I create graphics for small businesses, food brands, fashion stores and social media. My aim is to make each design feel intentional, readable and suited to its audience.</p>
+    </div>
+    <div class="panel">
+      <div class="kicker">Services</div>
+      <h2>What I can create</h2>
+      <div class="tags"><span>Business Flyers</span><span>Logo Design</span><span>Brand Identity</span><span>Food Promotion</span><span>Social Media Graphics</span><span>Promotional Posters</span></div>
+      <p><strong style="color:var(--text)">Contact:</strong> Replace this text with your WhatsApp number, email, or social handle before sharing.</p>
+    </div>
+  </section>
+</main>
+<footer><strong>SAGGY'S VISUALS</strong><br>Thank you for viewing my portfolio.</footer>
+<script>
+const buttons = document.querySelectorAll('.filters button');
+const cards = document.querySelectorAll('.card');
+buttons.forEach(button => button.addEventListener('click', () => {
+  buttons.forEach(b => b.classList.remove('active'));
+  button.classList.add('active');
+  const filter = button.dataset.filter;
+  cards.forEach(card => {
+    card.style.display = (filter === 'all' || card.dataset.category === filter) ? '' : 'none';
+  });
+}));
+</script>
+</body>
+</html>
